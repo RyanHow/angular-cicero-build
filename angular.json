@@ -14,7 +14,8 @@
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "customWebpackConfig": {
-              "path": "./extra-webpack.config.js"
+              "path": "./extra-webpack.config.js",
+              "mergeStrategies": { "optimization": "replace" }
             },
             "outputPath": "dist/angular-cicero-build",
             "index": "src/index.html",
